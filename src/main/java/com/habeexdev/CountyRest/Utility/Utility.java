@@ -57,7 +57,6 @@ public class Utility {
 			String input  = "grant_type=" + URLEncoder.encode(request.getGrant_type()) + 
 					"&username=" + URLEncoder.encode(request.getUsername()) +
 					"&password=" + URLEncoder.encode(request.getPassword()) ;
-			System.out.println("Request data: " + input);
 			OutputStream os = conn.getOutputStream();
 			os.write(input.getBytes());
 			os.flush();

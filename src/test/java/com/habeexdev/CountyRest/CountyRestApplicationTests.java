@@ -31,9 +31,9 @@ public class CountyRestApplicationTests {
 	CountryDto countryDto;
 	SignInRequest signInRequest;
 	
-	
 	Gson gson;
 	
+	//Note: make sure you acquired authorization token from login for proper testing
 	String authorization = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlci13ZWItc2VydmljZSJdLCJ1c2VyX25hbWUiOiJoYWJlZXgiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiZXhwIjoxNTQ5Mjc1NTY5LCJhdXRob3JpdGllcyI6WyJhZG1pbiJdLCJqdGkiOiJmYTllMzdhMS1hNjYzLTQxMjQtOGYwMy1hMTQwYThmODNlODUiLCJjbGllbnRfaWQiOiJ1c2VyIn0.PeforvGHtuj6AF4k0EVGlknvwLSH8S9FASP3TvzoxPc";
 
 	@Before
@@ -46,9 +46,6 @@ public class CountyRestApplicationTests {
 		signInRequest.setUsername("habeex");
 		gson = new Gson();
 	  }
-	
-	
-
 	
 	@Test
 	public void getCountries() throws Exception {
